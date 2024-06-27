@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Plugins
 require("lazy").setup({
   -- Theme
-  { 'rebelot/kanagawa.nvim',             lazy = false },
+  { 'folke/tokyonight.nvim',             lazy = false },
   { 'nvim-tree/nvim-web-devicons',       lazy = false },
   { 'nvim-lua/plenary.nvim',             lazy = false },
   -- LSP
