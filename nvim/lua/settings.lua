@@ -43,3 +43,4 @@ vim.o.foldenable = false
 vim.o.scrolloff = 10
 vim.o.errorbells = false
 vim.o.numberwidth = 4
+vim.o.clipboard = "unnamedplus"
