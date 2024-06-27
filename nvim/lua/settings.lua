@@ -43,4 +43,4 @@ vim.o.foldenable = false
 vim.o.scrolloff = 10
 vim.o.errorbells = false
 vim.o.numberwidth = 4
-vim.o.clipboard = "unnamedplus"
+vim.o.clipboard = "unnamedplus" -- Synchronizes the system clipboard with Neovim's clipboard
