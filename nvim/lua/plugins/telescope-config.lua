@@ -1,3 +1,17 @@
+require('telescope').setup({
+  defaults = {
+    vimgrep_arguments = {
+      'rg',
+      '--color=never',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--ignore-case'
+    },
+  }
+})
+
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<leader>fs', builtin.find_files, {})
