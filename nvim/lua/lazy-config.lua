@@ -29,9 +29,9 @@ require("lazy").setup({
   },
   { 'nvim-treesitter/nvim-treesitter' },
   -- Editor tools
-  { 'kyazdani42/nvim-tree.lua',       lazy = false }, -- File tree
-  { 'tpope/vim-fugitive' },                           -- Git interface
-  { 'lewis6991/gitsigns.nvim' },                      -- Git utilities
+  { 'kyazdani42/nvim-tree.lua',       lazy = false },  -- File tree
+  { 'tpope/vim-fugitive' },                            -- Git interface
+  { 'lewis6991/gitsigns.nvim' },                       -- Git utilities
   {
     'akinsho/git-conflict.nvim',
     version = "*",
