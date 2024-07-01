@@ -2,7 +2,8 @@
 local lsp_clients = {
   'lua_ls',
   'elixirls',
-  'jsonls'
+  'jsonls',
+  'hls'
 }
 
 require('mason').setup()
