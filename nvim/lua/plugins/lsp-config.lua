@@ -5,7 +5,8 @@ local lsp_clients = {
   'jsonls',
   'hls',
   'bashls',
-  'yamlls'
+  'yamlls',
+  'terraformls'
 }
 
 require('mason').setup()
