@@ -16,7 +16,8 @@ require "nvim-treesitter.configs".setup {
     "terraform",
     "sql",
     "earthfile",
-    "dockerfile"
+    "dockerfile",
+    "toml"
   },
   context_commentstring = {
     enable = true

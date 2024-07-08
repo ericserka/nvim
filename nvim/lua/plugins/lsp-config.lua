@@ -10,7 +10,8 @@ local lsp_clients = {
   'sqls',
   'dockerls',
   'docker_compose_language_service',
-  'earthlyls'
+  'earthlyls',
+  'taplo'
 }
 
 require('mason').setup()
