@@ -1,11 +1,28 @@
-require 'nvim-treesitter.configs'.setup {
+require "nvim-treesitter.configs".setup {
   -- the first five should always be installed
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "surface", "json", "haskell", "bash", "yaml", "terraform" },
+  ensure_installed = {
+    "c",
+    "lua",
+    "vim",
+    "vimdoc",
+    "query",
+    "elixir",
+    "heex",
+    "surface",
+    "json",
+    "haskell",
+    "bash",
+    "yaml",
+    "terraform",
+    "sql",
+    "earthfile",
+    "dockerfile"
+  },
   context_commentstring = {
     enable = true
   },
   highlight = {
-    enable = true,
+    enable = true
   },
   indent = {
     enable = true

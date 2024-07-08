@@ -6,7 +6,11 @@ local lsp_clients = {
   'hls',
   'bashls',
   'yamlls',
-  'terraformls'
+  'terraformls',
+  'sqls',
+  'dockerls',
+  'docker_compose_language_service',
+  'earthlyls'
 }
 
 require('mason').setup()
@@ -22,8 +26,9 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 require('gitsigns').setup()
 
 local on_attach = function(client, bufnr)
-  -- Format on save
-  if client.server_capabilities.documentFormattingProvider then
+  -- Format on save if documentFormattingProvider
+  -- not formatting when filetype is haskell because unexpected behavior was occurring (maybe due to the ihp framework?)
+  if client.server_capabilities.documentFormattingProvider and vim.bo.filetype ~= "haskell" then
     vim.cmd('autocmd BufWritePre <buffer> lua vim.lsp.buf.format()')
   end
 
