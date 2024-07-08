@@ -17,7 +17,8 @@ require "nvim-treesitter.configs".setup {
     "sql",
     "earthfile",
     "dockerfile",
-    "toml"
+    "toml",
+    "csv"
   },
   context_commentstring = {
     enable = true
