@@ -19,7 +19,9 @@ require "nvim-treesitter.configs".setup {
     "dockerfile",
     "toml",
     "csv",
-    "markdown"
+    "markdown",
+    "javascript",
+    "typescript"
   },
   context_commentstring = {
     enable = true

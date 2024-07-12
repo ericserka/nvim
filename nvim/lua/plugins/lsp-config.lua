@@ -12,7 +12,8 @@ local lsp_clients = {
   'docker_compose_language_service',
   'earthlyls',
   'taplo',
-  'marksman'
+  'marksman',
+  'tsserver'
 }
 
 require('mason').setup()
