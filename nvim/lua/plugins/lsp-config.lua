@@ -1,4 +1,6 @@
 -- LSP client installer
+-- Some need nodejs, others need golang (recommended to install using asdf)
+-- unzip is a prerequisite for some too (sudo apt install unzip)
 local lsp_clients = {
   'lua_ls',
   'elixirls',

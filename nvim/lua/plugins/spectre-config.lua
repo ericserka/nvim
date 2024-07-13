@@ -1,3 +1,5 @@
+-- ripgrep is prerequisite (sudo apt install ripgrep)
+
 local spectre = require('spectre')
 
 spectre.setup({

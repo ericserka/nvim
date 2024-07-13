@@ -1,3 +1,4 @@
+-- ripgrep is prerequisite (sudo apt install ripgrep)
 require('telescope').setup({
   defaults = {
     vimgrep_arguments = {
