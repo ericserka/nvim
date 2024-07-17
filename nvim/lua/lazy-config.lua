@@ -7,7 +7,7 @@ if not vim.loop.fs_stat(lazypath) then
       "clone",
       "--filter=blob:none",
       "https://github.com/folke/lazy.nvim.git",
-      "--branch=stable",       -- latest stable release
+      "--branch=stable", -- latest stable release
       lazypath
     }
   )
@@ -33,27 +33,27 @@ require("lazy").setup(
     { "nvim-treesitter/nvim-treesitter" },
     -- Editor tools
     { "kyazdani42/nvim-tree.lua",       lazy = false }, -- File tree
-    { "tpope/vim-fugitive" },                       -- Git interface
-    { "lewis6991/gitsigns.nvim" },                  -- Git utilities
+    { "tpope/vim-fugitive" },                           -- Git interface
+    { "lewis6991/gitsigns.nvim" },                      -- Git utilities
     {
       "akinsho/git-conflict.nvim",
       version = "*",
       config = true
-    },                                           -- Git conflict resolver
-    { "lukas-reineke/indent-blankline.nvim" },   -- Indent tabs/blanklines
+    },                                         -- Git conflict resolver
+    { "lukas-reineke/indent-blankline.nvim" }, -- Indent tabs/blanklines
     {
       "akinsho/toggleterm.nvim",
       version = "*",
       config = true
-    },                                 -- Persistent terminal (<C-d> to exit without persist)
-    { "nvim-lualine/lualine.nvim" },   -- Statusline
+    },                               -- Persistent terminal (<C-d> to exit without persist)
+    { "nvim-lualine/lualine.nvim" }, -- Statusline
     -- Editor actions
     { "nvim-telescope/telescope.nvim",      tag = "0.1.5" },
     { "nvim-pack/nvim-spectre" },
     { "tpope/vim-commentary" },
     { "tpope/vim-surround" },
     { "windwp/nvim-autopairs" },
-    { "RRethy/vim-illuminate" },   -- Highlight exact same words on buffer
+    { "RRethy/vim-illuminate" }, -- Highlight exact same words on buffer
     { "tpope/vim-endwise",                  lazy = false },
     { "moll/vim-bbye" },
     { "github/copilot.vim" },
@@ -66,6 +66,14 @@ require("lazy").setup(
       build = function()
         vim.fn["mkdp#util#install"]()
       end
-    }
+    },
+    {
+      "theKnightsOfRohan/csvlens.nvim",
+      dependencies = {
+        "akinsho/toggleterm.nvim"
+      },
+      config = true,
+      opts = {}
+    },
   }
 )
