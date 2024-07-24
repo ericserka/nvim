@@ -15,7 +15,8 @@ local lsp_clients = {
   'earthlyls',
   'taplo',
   'marksman',
-  'tsserver'
+  'tsserver',
+  'typst_lsp'
 }
 
 require('mason').setup()

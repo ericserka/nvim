@@ -21,7 +21,8 @@ require "nvim-treesitter.configs".setup {
     "csv",
     "markdown",
     "javascript",
-    "typescript"
+    "typescript",
+    "typst"
   },
   context_commentstring = {
     enable = true
