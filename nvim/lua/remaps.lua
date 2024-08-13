@@ -8,6 +8,9 @@ vim.g.mapleader = " "
 -- [ T ]ext [ R ]eplace
 vim.api.nvim_set_keymap('n', '<leader>tr', ':%s///g<Left><Left><Left>', { noremap = true })
 
+-- [ C ]lear [ S ]earch
+vim.api.nvim_set_keymap('n', '<leader>cs', ':noh<CR>', { noremap = true })
+
 -- [ K ]ill [ B ]uffer
 vim.api.nvim_set_keymap('n', '<leader>kb', ':Bdelete<CR>', { noremap = true, silent = true })
 
