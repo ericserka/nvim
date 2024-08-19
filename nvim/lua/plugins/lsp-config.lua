@@ -16,7 +16,8 @@ local lsp_clients = {
   'taplo',
   'marksman',
   'tsserver',
-  'typst_lsp'
+  'typst_lsp',
+  'jdtls'
 }
 
 require('mason').setup()
@@ -98,6 +99,9 @@ cmp.setup {
     { name = 'nvim_lsp' },
   },
 }
+
+-- setup nvim-java before lspconfig
+require('java').setup()
 
 require('mason-lspconfig').setup_handlers {
   function(server_name)

@@ -75,5 +75,6 @@ require("lazy").setup(
       config = true,
       opts = {}
     },
+    { "nvim-java/nvim-java" },
   }
 )
